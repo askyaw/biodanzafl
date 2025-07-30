@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodanza FL – Dance Yourself Alive</title>
+  <!--
+    The stylesheet is kept in a separate file to keep this document clean and
+    maintainable. See styles.css in the same folder for all visual styling.
+  -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts for stylish typography -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Fixed navigation bar -->
+  <header>
+    <nav>
+      <div class="logo">Biodanza&nbsp;FL</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero: a full screen introduction with call to action -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Ready to Feel Alive Through Dance?</h1>
+      <p>Where movement meets magic and connection awakens the soul.</p>
+      <a href="#contact"><button class="cta-button">Join a Session</button></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about">
+      <div class="about-text">
+        <h2>About Biodanza</h2>
+        <p>
+          Biodanza, literally the “dance of life,” was created in the 1960s by
+          Chilean anthropologist Rolando&nbsp;Toro. It is a form of self‑development that
+          weaves together music, movement and emotional expression to help us
+          reconnect with ourselves and each other. Sessions are crafted to
+          stimulate the joy of being, promote internal integration, recover
+          essential instincts and the drivers of life force, and to reconnect us as
+          human beings. Facilitators skilfully blend rhythmic to restful music
+          with dance invitations and group encounters that honour our human
+          physiology. These intense experiences — known as <em>vivencias</em> — help us
+          fall in love with life and explore five primary lines of living:
+          vitality, creativity, affectivity, sensuality and transcendence.
+        </p>
+      </div>
+      <div class="about-quote">
+        <p>“Biodanza is the bridge between my body and my truth.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="events">
+    <h2 class="section-heading">Upcoming Events</h2>
+    <div class="events-container">
+      <!-- Friday card -->
+      <div class="event-card card-friday">
+        <h3>Friday</h3>
+        <p>7&nbsp;–&nbsp;9&nbsp;PM</p>
+        <p class="price">$25</p>
+      </div>
+      <!-- Saturday card -->
+      <div class="event-card card-saturday">
+        <h3>Saturday</h3>
+        <p>11&nbsp;AM&nbsp;–&nbsp;4:30&nbsp;PM</p>
+        <p class="price">$35</p>
+      </div>
+      <!-- Sunday card -->
+      <div class="event-card card-sunday">
+        <h3>Sunday</h3>
+        <p>10&nbsp;AM&nbsp;–&nbsp;2:30&nbsp;PM</p>
+        <p class="price">$35</p>
+      </div>
+      <!-- Full weekend card -->
+      <div class="event-card card-weekend">
+        <h3>Full Weekend</h3>
+        <p>Fri – Sun</p>
+        <p class="price">$120</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery and Testimonials -->
+  <section id="gallery" class="gallery">
+    <h2 class="section-heading">Moments of Joy</h2>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <div class="testimonial">
+          "I felt a deep connection with my body and the people around me."
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="testimonial">
+          "Through dance I discovered a new sense of joy and community."
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="testimonial">
+          "Biodanza opened my heart – I've never felt so alive!"
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2 class="section-heading">Contact & Registration</h2>
+    <div class="contact-container">
+      <!-- Contact form -->
+      <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <p>Interested in joining a session or want to learn more? Fill out the form and we'll happily respond with the next steps.</p>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Share your interest..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <!-- Map embed -->
+      <div class="contact-map">
+        <iframe
+          src="https://maps.google.com/maps?q=Orlando%20Florida&t=&z=10&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Biodanza&nbsp;FL. All rights reserved.</p>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+  </footer>
+
+  <!-- Simple script to update the current year in the footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
